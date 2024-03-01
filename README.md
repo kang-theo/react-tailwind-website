@@ -13,3 +13,4 @@ A website based on React and Tailwind CSS.
 
 * ES7 React/Redux/React Native snippets
 * Tailwind CSS IntelliSense
+* Prettier - Code formatter
