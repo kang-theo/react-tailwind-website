@@ -10,5 +10,6 @@ A website based on React and Tailwind CSS.
 * npx tailwindcss init -p // init tailwind config
 
 ## Install Utils
+
 * ES7 React/Redux/React Native snippets
 * Tailwind CSS IntelliSense
