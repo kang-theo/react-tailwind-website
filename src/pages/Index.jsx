@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../widgets/Header";
 import Hero from "../widgets/Hero";
+import Solutions from "../widgets/Solutions";
 
 function Index() {
   return (
@@ -9,6 +10,9 @@ function Index() {
       <main className="mt-20">
         <Hero />
       </main>
+      <section className="md:p-20">
+        <Solutions />
+      </section>
     </div>
   );
 }

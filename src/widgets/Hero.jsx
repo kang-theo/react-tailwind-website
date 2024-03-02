@@ -1,6 +1,12 @@
 import React from "react";
 import Video from "../assets/production_ID_4167404.mp4";
 
+/*
+  Hero" typically refers to a prominent section or element on a webpage, 
+  often located at the top, that features key content such as a large image, 
+  headline, or call-to-action. It is meant to capture the attention of visitors 
+  and set the tone for the rest of the webpage.
+*/
 function Hero() {
   return (
     <div className="grid justify-items-center gap-8 pb-28 relative">
@@ -50,7 +56,7 @@ function Hero() {
           src={Video}
           controls
           // className="w-[768px] h-[432px] object-cover object-top rounded"
-          className="w-[560px] h-[419px] object-cover object-top rounded"
+          className="w-[560px] h-[300px] object-cover object-top rounded"
         ></video>
         <div className="flex absolute rounded-full bg-white -bottom-7 px-5 py-4 drop-shadow-xl">
           <svg
