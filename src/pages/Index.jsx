@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../widgets/Header";
 import Hero from "../widgets/Hero";
 import Solutions from "../widgets/Solutions";
+import HowItWorks from "../widgets/HowItWorks";
 
 function Index() {
   return (
@@ -12,6 +13,9 @@ function Index() {
       </main>
       <section className="md:p-20">
         <Solutions />
+      </section>
+      <section className="mt-20">
+        <HowItWorks />
       </section>
     </div>
   );
