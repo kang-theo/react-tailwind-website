@@ -1,4 +1,5 @@
 import React from "react";
+import Video from "../assets/production_ID_4167404.mp4";
 
 function Hero() {
   return (
@@ -43,6 +44,28 @@ function Hero() {
             </linearGradient>
           </defs>
         </svg>
+      </div>
+      <div className="relative grid justify-items-center">
+        <video
+          src={Video}
+          controls
+          // className="w-[768px] h-[432px] object-cover object-top rounded"
+          className="w-[560px] h-[419px] object-cover object-top rounded"
+        ></video>
+        <div className="flex absolute rounded-full bg-white -bottom-7 px-5 py-4 drop-shadow-xl">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="mr-3"
+          >
+            <circle cx="12" cy="12" r="11" stroke="#999999" stroke-width="2" />
+            <path d="M10 17L16 12L10 7V17Z" fill="#999999" />
+          </svg>
+          Watch a 2-minute demonstration video
+        </div>
       </div>
     </div>
   );
