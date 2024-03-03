@@ -1,6 +1,8 @@
 # React + Tailwind CSS
 
-A website based on React and Tailwind CSS.
+A website based on React and Tailwind CSS inspired by [Beautiful Tailwind CSS templates](https://cruip.com/)
+
+## Initialization
 
 ## Kickoff
 
@@ -9,8 +11,12 @@ A website based on React and Tailwind CSS.
 * yarn add -D tailwindcss postcss autoprefixer // install tailwind CSS dependencies
 * npx tailwindcss init -p // init tailwind config
 
-## Install Utils
+## Utils
 
 * ES7 React/Redux/React Native snippets
 * Tailwind CSS IntelliSense
 * Prettier - Code formatter
+
+## Website showcase
+
+![Showcase](./public/screenshot.png)
