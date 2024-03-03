@@ -4,8 +4,10 @@ import Logo from "../logo.svg";
 function Header() {
   return (
     <header className="flex justify-between items-center h-20">
-      <img src={Logo} alt="" className="w-8 h-8" />
-      <nav className="flex item-center">
+      <div className="flex">
+        <img src={Logo} alt="" className="w-32 h-32" />
+      </div>
+      <nav className="flex items-center">
         <a href="#">Login</a>
         <a
           href="#"
