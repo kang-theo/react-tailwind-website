@@ -1,0 +1,32 @@
+name: Package the application and upload it to AWS EC2.
+
+# Install git, yarn, nginx firstly on the EC2 instance.
+
+on:
+    workflow_dispatch: # trigger the workflow manually
+    push:
+        branches:
+            - main
+            - release/*
+
+jobs:
+    build:
+        # runs-on Specify the virtual machine environment required to run the designated job task (required field).
+        runs-on: ubuntu-latest
+        steps:
+            - name: Install dependencies
+              run: yarn
+
+            - name: Code packaging
+              run: yarn build
+              
+            - name: Release to AWS EC2
+              uses: easingthemes/ssh-deploy@v2.1.1
+              env:
+                  SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+                  ARGS: '-avzr --delete'
+                  SOURCE: 'dist'
+                  REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+                  REMOTE_USER: ${{ secrets.REMOTE_USER }}
+                  TARGET: '/www/html/react-tailwind-website'                  
+                  
